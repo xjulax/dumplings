@@ -1,0 +1,110 @@
+
+body{
+    margin: 0;
+    padding:0;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1em;
+  }
+  .main_home, .second, header, body{
+    background-color:#8ADAFF;
+  }
+  
+  main, footer, .brown{
+      background-color:white;
+  }
+  
+  header{
+    padding: 25px;
+  }
+  
+  .button{
+    border:none;
+    color: white;
+    padding: 19px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 10px 50px 10px;
+    /* down, left */
+    cursor: pointer;
+    background-color:#335598 ;
+  }
+  
+  .wellness_photo{
+    flex:25%;
+    padding:5px;
+    flex-direction: row;
+    object-fit: contain; 
+    width: 30%;
+  }
+  .home_title, .home_intro{
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+  }
+  
+  h1{
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #335598;
+  }
+  
+  h1,
+  h2,
+  p {
+    margin: 0;
+    color: #335598;
+  }
+  
+  h1
+  {
+    font-weight: 700;
+    font-size: 42px;
+  }
+  
+  h2{
+    font-weight: 700;
+    font-size: 35px;
+    text-decoration: none;
+    padding: 25px;
+  }
+  
+  #heading{
+    width: auto;
+    height: auto;
+    max-width: 30%;
+    max-height: 30%;
+    object-fit: contain;
+  }
+  
+  #home_photo{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+  }
+  
+  
+  #row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #row img {
+    width: 25%;
+    min-width: 100px;
+    border:none;
+  }
+
