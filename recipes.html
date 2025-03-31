@@ -4,52 +4,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dumplings</title>
-        <link rel="icon" type="image/x-icon" href="/images/tea_icon">
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
         <link rel="stylesheet" href="style.css">
         <style>
-           #rectangle{
-            background-image:url(img/rectangle.png) ,url(img/backFlowers.png) ;
-            background-position: right bottom, left top;
-            background-repeat: no-repeat, repeat;
-            padding:15px;
-           } 
+           * {
+               box-sizing: border-box;
+           }
+           /* Responsive layout */
+           @media screen and (max-width: 500px) {
+           .column {
+           width: 100%;
+           }
+           }
 
-.column {
-  float: left;
-  width: 25%;
-  padding: 5px;
-}
-
-* {
-  box-sizing: border-box;
-}
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
-}
-
-body {
-  background-image: url('img/background.png');
-  /* background-repeat: no-repeat; */
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-        </style>
+           body {
+           background-image: url('img/background.png');
+           /* background-repeat: no-repeat; */
+           background-repeat: repeat;
+           background-attachment: fixed;
+           background-size: 100% 100%;
+           }
+       </style>
     </head>
     <body>
-        <header class="header"> 
-          <img id="logo" src="img/logo.png" alt="Logo" width="50" >
-            <nav class="header_nav main-nav">
-              <a class="list-item_link" href="index.html">Home</a>
-              <a class="list-item_divider">|</a>
-              <a class="list-item_link" href="recipes.html">Recipes</a>
-              <a class="list-item_divider">|</a>
-              <a class="list-item_link" href="gallery.html">Gallery</a>
-            </nav>
-        </header> 
+      <header> 
+        <nav>
+            <a href="index.html"> |   Home    | </a>
+            <a class="active" href="recipes.html"> |    Recipes   | </a>
+            <a href="gallery.html"> |    Gallery   | </a>
+            <a href="form.html"> |    Contact   | </a>
+        </nav>
+      </header> 
+        <div class="icon-bar">
+          <a href="sesame.html"><img src="img/sesame.png" alt="Sesame dumpling" width="60"></a> 
+          <a href="veg.html"><img src="img/veg.png" alt="Vegetable dumpling" width="60"></a> 
+          <a href="fruit.html"><img src="img/fruit.png" alt="Fruit dumpling" width="60"></a> 
+          <a href="pork.html"><img src="img/pork.png" alt="Pork dumpling" width="60"></a> 
+          <a href="poland.html"><img src="img/poland.png" alt="Polish style dumpling" width="60"></a>
+          <a href="japan.html"><img src="img/japan.png" alt="Japanese style dumpling" width="60"></a> 
+        </div>
         <main>
           <div class="row">
             <h2>Top tips for crafting the perfect dumplings</h2>
@@ -61,19 +54,11 @@ body {
           </div>
 
         </main>
-        <footer class="footer">
-            <ul class="footer_list footer-list">
-                <li class="footer-list_item list-item">
-                    <a class="list-item_link" href="">About</a>
-                </li>
-                <li class="footer-list_item list-item">
-                    <a class="list-item_link" href="">Link</a>
-                </li>
-                <li class="footer-list_item list-item">
-                    <a class="list-item_link" href="">Link</a>
-                </li>
-            </ul>
-            <p>&copy; 2025 All rights reserved</p></footer>
+        <footer class="footer" style="position: fixed;">
+          <a class="list-item_link" href="index.html">Home</a>
+          <a class="list-item_link" href="gallery.html">Gallery</a>
+          <a class="list-item_link" href="form.html">Contact</a>
+          <p>&copy; 2025 All rights reserved</p>
         </footer>
     </body>
 </html>

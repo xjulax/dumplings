@@ -1,114 +1,193 @@
+nav{
+  overflow:hidden;
+  background-color: #335598;
+  padding-bottom: 10px;
+}
+
+nav a{
+  color: black;
+  align-items:center;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.2s;
+}
+
+nav a:hover{
+  background-color: #0a265f;
+  color: white;
+}
+
+
+nav a.active {
+  background-color: #335598;
+  color: white;
+}
+
+.active {
+  background-color: #0a265f;
+}
+
+.main_home, .second, body{
+  background-color:#8ADAFF;
+}
+
+  
+main, .more, .more .responsive{
+  background-color:white;
+}
+
+header{
+  padding: 25px;
+  background-color: #335598;
+}
+
+/* all text */
 
 body{
-    margin: 0;
-    padding:0;
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0.1em;
-  }
-  .main_home, .second, header, body{
-    background-color:#8ADAFF;
-  }
-  
-  main, footer, .brown{
-      background-color:white;
-  }
-  
-  header{
-    padding: 25px;
-  }
-  
-  .button{
-    border:none;
-    color: white;
-    padding: 19px 50px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 6px 10px 50px 10px;
-    /* down, left */
-    cursor: pointer;
-    background-color:#335598 ;
-  }
-  
-  .wellness_photo{
-    flex:25%;
-    padding:5px;
-    flex-direction: row;
-    object-fit: contain; 
-    width: 30%;
-  }
-  .home_title, .home_intro{
-    padding-left: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-  }
-  header a{
-    text-decoration: none;
-    color: black;
-    transition: 0.2s;
-  }
-  a{
-    text-decoration: underline;
-    color: darkblue;
-  }
-  
-  h1{
-    font-family: "Poppins", serif;
-    font-weight: 700;
-    font-style: normal;
-    color: #335598;
-  }
-  
-  h1,
-  h2,
-  p {
-    margin: 0;
-    color: #335598;
-  }
-  
-  h1
-  {
-    font-weight: 700;
-    font-size: 42px;
-  }
-  
-  h2{
-    font-weight: 700;
-    font-size: 35px;
-    text-decoration: none;
-    padding: 25px;
-  }
-  
-  #heading{
-    width: auto;
-    height: auto;
-    max-width: 30%;
-    max-height: 30%;
-    object-fit: contain;
-  }
-  
-  #home_photo{
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .parent{
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-  }
-  
-  
-  #row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  #row img {
-    width: 25%;
-    min-width: 100px;
-    border:none;
-  }
+  margin: 0;
+  padding:0;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.1em;
+}
 
+a{
+  text-decoration: underline;
+  color: darkblue;
+}
+
+main h1{
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #335598;
+}
+
+main h1,
+main h2,
+main p {
+  margin: 0;
+  color: #335598;
+}
+  
+h1
+{
+  font-weight: 700;
+  font-size: 42px;
+}
+  
+h2{
+  font-weight: 700;
+  font-size: 35px;
+  text-decoration: none;
+  padding: 25px;
+}
+
+/* index */
+
+#white{
+  background-color: #0a265f;
+  padding: 25px;
+}
+#white h2, #white h1, #white p{
+  color: white;
+}
+
+.home_title, .home_intro{
+  padding-left: 25px;
+  padding-bottom: 25px;
+  padding-right: 25px;
+}
+
+.parent{
+  padding: 25px;
+  background-color:#8ADAFF;
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+}
+  
+div.gallery {
+  border: 3px solid #0a265f;
+  margin-bottom: 25px;
+  /*  */
+  background-color: #8ADAFF;
+  color: #0a265f;
+  font-size: 17px;
+  flex: 1;
+}
+
+div.gallery img {
+  height: auto;
+  /* padding: 10px; */
+  margin-left: 40%;
+  margin-right: 40%;
+  padding-top: 5%;
+  flex: 1;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 33.333%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#heading{
+  width: auto;
+  height: auto;
+  max-width: 30%;
+  max-height: 30%;
+  object-fit: contain;
+}
+  
+#home_photo{
+  display: flex;
+  flex-direction: row;
+}
+
+body {margin:0;}
+
+/* recipes */
+
+.icon-bar {
+  width: 100%;
+  background-color: #8ADAFF;
+  overflow: auto;
+  position: sticky;
+  top: 0;
+}
+  
+.icon-bar a {
+  float: left;
+  width: 16.6666666667%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+  
+.icon-bar a:hover {
+  background-color: #0a265f;
+}
+  
+footer{
+width: 100%;
+background-color: #335598;
+color: white;
+text-align: center;
+bottom:0;
+}

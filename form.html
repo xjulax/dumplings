@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dumplings</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <style>
+           * {
+               box-sizing: border-box;
+           }
+           /* Responsive layout */
+           @media screen and (max-width: 500px) {
+           .column {
+           width: 100%;
+           }
+           }
+           body, main{
+           background-image: url('img/Frame10.png');
+           background-repeat: repeat;
+           background-attachment: fixed;
+           background-size: 100% 100%;
+           }
+           .contact{
+            padding: 5%;
+            padding-left:38%;
+           }
+
+           label{
+            color: black;
+            font-size: 15px; 
+            text-decoration: none;
+            font-weight: bold;
+           }
+
+           h3{
+            color: black;
+            font-size: 23px; 
+           }
+
+           .required {
+    color: red;
+    font-weight: bold;
+}
+       </style>
+    </head>
+    <body>
+      <header> 
+        <nav>
+            <a href="index.html"> |   Home    | </a>
+            <a href="recipes.html"> |    Recipes   | </a>
+            <a href="gallery.html"> |    Gallery   | </a>
+            <a class="active" href="form.html"> |    Contact   | </a>
+        </nav>
+      </header> 
+        <main>
+            <section class="contact">
+                <h3>Please enter the following here</h3>
+                <form action="http://foo.com" method="put">
+                    <label for="first_name">First name:<span class="required">*</span></label>
+                    <input type="text" name="first_name" id="first_name" autofocus required><br>
+                    
+                    <label for="last_name">Last name:<span class="required">*</span> </label>
+                    <input type="text" name="last_name" id="last_name" required>
+
+                    <label for="email" >Email:<span class="required">*</span></label>
+                    <input type="email" name="email" id="email" required placeholder="johndoe@gmail.com"><br>
+                    <div>
+                        <label for="heard">How did you hear about us:</label><br>
+                        <input type="radio" id="internet" name="heard" value="internet">
+                        <label for="internet">Internet</label>
+                        <input type="radio" id="college" name="heard" value="college">
+                        <label for="college">College</label>
+                        <input type="radio" id="friend" name="heard" value="friend">
+                        <label for="friend">Friend</label>
+                    </div>
+                    <br>
+                    <label for="message">Query:</label>
+                    <div>
+                        <textarea cols="40" rows="6" id="message" name="message" placeholder="Your message must be less than 200 characters" maxlength="200"></textarea><br>
+                    </div>
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                    <input type="reset" name="reset" id="reset" value="Reset">
+                </form>
+            </section>
+
+        </main>
+        <footer class="footer" style="position: fixed;">
+          <a class="list-item_link" href="index.html">Home</a>
+          <a class="list-item_link" href="gallery.html">Gallery</a>
+          <a class="list-item_link" href="form.html">Contact</a>
+          <p>&copy; 2025 All rights reserved</p>
+        </footer>
+    </body>
+</html>

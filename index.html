@@ -4,143 +4,130 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dumplings</title>
-        <link rel="icon" type="image/x-icon" href="/images/tea_icon">
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
         <link rel="stylesheet" href="style.css">
         <style>
-           #rectangle{
-            background-image:url(img/rectangle.png) ,url(img/background.png) ;
-            background-position: right bottom, left top;
-            background-repeat: no-repeat, repeat;
-            padding:15px;
-           } 
+            .column {
+                float: left;
+                width: 25%;
+                padding: 5px;
+            }
 
-.column {
-  float: left;
-  width: 25%;
-  padding: 5px;
-}
+            * {
+                box-sizing: border-box;
+                }
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 500px) {
+                .column {
+                    width: 100%;
+                }
+            }
 
-* {
-  box-sizing: border-box;
-}
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
-}
+            .gallery img:hover{
+              opacity: 0.6;
+            }
+
         </style>
     </head>
     <body>
-        <header class="header"> 
-            <img id="logo" src="img/logo.png" alt="Logo" width="50" >
-            <div class="header_nav">
-                <a class="list-item_link" href="index.html">Home</a>
-                <a class="list-item_divider">|</a>
-                <a class="list-item_link" href="recipes.html">Recipes</a>
-                <a class="list-item_divider">|</a>
-                <a class="list-item_link" href="gallery.html">Gallery</a>
-            </div>
+        <header> 
+            <nav>
+                <img id="logo" src="img/logo(23).png" alt="Logo" width="200" >
+                <a class="active" href="index.html"> |   Home    | </a>
+                <a href="recipes.html"> |    Recipes   | </a>
+                <a href="gallery.html"> |    Gallery   | </a>
+                <a href="form.html"> |    Contact   | </a>
+            </nav>
         </header> 
         <main>
             <div class="parent">
             <section class="main_home" id="home">
                 <h1 class="home_title">Dumplings</h1>
-                <p class="home_intro">Let’s start with who invented dumplings, since this is where the story of the dumpling begins. Most experts believe that dumplings were invented by Zhang Zhongjing, a Chinese medicine practitioner who lived in the Eastern Han Dynasty, the second imperial dynasty of China that lasted from 206 BC to 220 AD.
+                <p class="home_intro" style="color:#0a265f;">Let’s start with who invented dumplings, since this is where the story of the dumpling begins. Most experts believe that dumplings were invented by Zhang Zhongjing, a Chinese medicine practitioner who lived in the Eastern Han Dynasty, the second imperial dynasty of China that lasted from 206 BC to 220 AD.
                     As legend tells it, it was a difficult winter and many were experiencing ill effects from the cold. To help people warm up, Zhongjing took mutton, herbs, and chilis and wrapped them in dough, then steamed them to bind everything together and keep them warm. These steaming, pillow-like treats helped people overcome the cold weather, while the herbs that Zhongjing put inside worked to improve blood circulation and prevent frostbite. <a href="https://chefonefoods.com/blog/what-is-a-dumpling-meaning-and-history-behind-this-delicious-food/">Learn more... </a>
                 </p>
-                <button type="button" class="button home_1">Buy Now</button>
-                <button type="button" class="button home_2">Products</button>
             </section>
-            <section class="second">
+            <div class="second">
                 <img 
-                id="home_photo"src="img/dumplings_top.jpeg" 
-                alt="Herbal tea mix" 
+                id="home_photo" src="img/dumplings_top.jpeg" 
+                alt="Photo of dumplings being made" 
                 width="472" 
                 height="300" 
                 style="border:15px solid #335598; padding:0; margin:0 "
-                />
-            </section>
+                >
             </div>
-                </div>
-                <div class="row">
-                    <h2>Learn more about dumplings</h2>
-                    <div class="column">
-                        <img src="img/Ajurweda.png" style="width:70%" alt="">
-                    </div>
-                    <div class="column">
-                        <img  src="img/Akupunktura.png" style="width:70%" alt="">
-                    </div>
-                    <div class="column">
-                        <img  src="img/Aromaterapia.png" style="width:70%" alt="" >
-                    </div>
-                    <div>
-                        <img src="img/Zielarstwo.png" style="width:70%" alt="">
-                    </div>
-                  <!-- </div>
-                    <li class="herbal-list_item list-item">
-                        <img
-                        />
-                        <a class="list-item_link" href="">Link</a>
-                    </li>
-                    <li class="herbal-list_item list-item">
-                        <img 
-                        />
-                        <a class="list-item_link" href="">Link</a>
-                    </li>
-                    <li class="herbal-list_item list-item">
-                        <img
-                        />
-                        <a class="list-item_link" href="">Link</a>
-                    </li>
-                    <li class="herbal-list_item list-item">
-                        <img 
-                        />
-                        <a class="list-item_link" href="">Link</a>
-                    </li>
-                    <li class="herbal-list_item list-item">
-                        <img
-                        />
-                        <a class="list-item_link" href="">Link</a>
-                    </li>
-                    <li class="herbal-list_item list-item">
-                        <img
-                        />
-                        <a class="list-item_link" href="">Link</a>
-                    </li>
-                    <li class="herbal-list_item list-item">
-                        <img
-                        />
-                        <a class="list-item_link" href="">Link</a>
-                    </li>
-                    <li class="herbal-list_item list-item">
-                        <img
-                        />
-                        <a class="list-item_link" href="">Link</a>
-                    </li>
-                </ul>  -->
-            </section>
-            <section>
-                <div id="rectangle">
-                    <h1 class="brown">Lorem Ipsum Dolor</h1>
-                    <p class="brown">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                    <p class="brown">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                </div>
-            </section>
+            </div>
+                <section class="more">
+                    <h2><u>Learn more about dumplings</u></h2>
+                    <div class="responsive">
+                        <div class="gallery">
+                          <a target="_blank" href="sesame.html">
+                            <img src="img/sesame.png" alt="Cinque Terre" width="130">
+                          </a>
+                          <div class="desc"><b>Sesame Dumplings</b></div>
+                        </div>
+                      </div>
+                      <div class="responsive">
+                        <div class="gallery">
+                          <a target="_blank" href="veg.html">
+                            <img src="img/veg.png" alt="Cinque Terre" width="130">
+                          </a>
+                          <div class="desc"><b>Vegetable Dumplings</b></div>
+                        </div>
+                      </div>
+                      <div class="responsive">
+                        <div class="gallery">
+                          <a target="_blank" href="fruit.html">
+                            <img src="img/fruit.png" alt="Cinque Terre" width="130">
+                          </a>
+                          <div class="desc"><b>Fruit Dumplings</b></div>
+                        </div>
+                      </div>
+                      <div class="responsive">
+                        <div class="gallery">
+                          <a target="_blank" href="pork.html">
+                            <img src="img/pork.png" alt="Cinque Terre" width="130">
+                          </a>
+                          <div class="desc"><b>Pork Dumplings</b></div>
+                        </div>
+                      </div>
+                      <div class="responsive">
+                        <div class="gallery">
+                          <a target="_blank" href="poland.html">
+                            <img src="img/poland.png" alt="Cinque Terre" width="130">
+                          </a>
+                          <div class="desc"><b>Polish Style Dumplings</b></div>
+                        </div>
+                      </div>
+                      <div class="responsive">
+                        <div class="gallery">
+                          <a target="_blank" href="japan.html">
+                            <img src="img/japan.png" alt="Cinque Terre" width="130">
+                          </a>
+                          <div class="desc"><b>Japanese Style Dumplings</b></div>
+                        </div>
+                      </div>
+                    </section>
+            <div id="white">
+              <h3 style="color:#0a265f">srfg</h3>
+              <h2 class="white">The History of Dumplings</h2><br>
+              <p class="white">While the history of dumplings is often accepted as having started with Zhang Zhongjing, the general idea of dumplings as we know them today followed quite an interesting and varied trajectory.
+
+                  Because you can find dumpling variations in nearly every culture—Italian raviolis and Brazilian empanadas are just two of the offshoots of the traditional Chinese dumpling—the history of the dumpling has many different starting points, even if their official invention was during the Han Dynasty. Recipes for dumplings appear in later years in ancient Roman texts, with the very first dumpling recipe itself found in Apicius, a Roman cookbook.
+
+                  While dumplings appeared in many forms for many centuries during ancient times, it wasn’t until the 17th century that they finally got their name. The first use of the term “dumpling” can be found in an English text from 1600, where it was noted that the word was perhaps of German origin. And while Zhongjing may have created dumplings in the first place to help people survive brutal winters, other cultures created dumplings for other reasons, such as to help extend the life of meat and to make use of surplus grains.
+                  
+                  What this history of the dumpling tells us about their meaning is that some foods span the length of space and time. Many different cultures invented their own dumplings, and many of those dumplings look quite different than what Zhongjing first created, such as gnocchi and matzo balls. And by understanding this unique history, we understand more about how food has functioned in general throughout the human experience—both as a practicality and as medicine for the mind, body, and soul.
+                  
+                  There is simply no food that’s better than the dumpling for illuminating this important point and showing us that for all of our differences, food is one of the primary unifying factors that binds us together.
+              </p>
+            </div>
         </main>
-        <footer class="footer">
-            <ul class="footer_list footer-list">
-                <li class="footer-list_item list-item">
-                    <a class="list-item_link" href="">About</a>
-                </li>
-                <li class="footer-list_item list-item">
-                    <a class="list-item_link" href="">Link</a>
-                </li>
-                <li class="footer-list_item list-item">
-                    <a class="list-item_link" href="">Link</a>
-                </li>
-            </ul>
-            <p>&copy; 2025 All rights reserved</p></footer>
+        <footer>
+          <a class="list-item_link" href="index.html">Home</a>
+          <a class="list-item_link" href="gallery.html">Gallery</a>
+          <a class="list-item_link" href="form.html">Contact</a>
+          <p>&copy; 2025 All rights reserved</p>
         </footer>
     </body>
 </html>

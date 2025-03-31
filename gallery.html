@@ -4,70 +4,65 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dumplings</title>
-        <link rel="icon" type="image/x-icon" href="/images/tea_icon">
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
         <link rel="stylesheet" href="style.css">
         <style>
-           #rectangle{
-            background-image:url(img/rectangle.png) ,url(img/backFlowers.png) ;
-            background-position: right bottom, left top;
-            background-repeat: no-repeat, repeat;
-            padding:15px;
-           } 
+           * {
+               box-sizing: border-box;
+           }
+           /* Responsive layout */
+           @media screen and (max-width: 500px) {
+           .column {
+           width: 100%;
+           }
+           }
 
-.column {
-  float: left;
-  width: 25%;
-  padding: 5px;
-}
+           body, main {
+           background-color: #C7EAFF;
+           }
+           aside {
+            padding: 2%;
+            align-items: center;
+            /* background-color: white; */
+          }
+          .video {
+            float: right;
+            width: 40%;
+            padding: 2%;
+            padding-top: 10%;
+          } 
 
-* {
-  box-sizing: border-box;
-}
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
-}
-
-body {
-  background-image: url('img/background.png');
-  /* background-repeat: no-repeat; */
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
         </style>
     </head>
     <body>
-        <header class="header"> 
-          <img id="logo" src="img/logo.png" alt="Logo" width="50" >
-            <nav class="header_nav main-nav">
-                <a class="list-item_link" href="index.html">Home</a>
-                <a class="list-item_divider">|</a>
-                <a class="list-item_link" href="recipes.html">Recipes</a>
-                <a class="list-item_divider">|</a>
-                <a class="list-item_link" href="gallery.html">Gallery</a>
-            </nav>
-        </header> 
+      <header> 
+        <nav>
+            <a href="index.html"> |   Home    | </a>
+            <a href="recipes.html"> |    Recipes   | </a>
+            <a class="active" href="gallery.html"> |    Gallery   | </a>
+            <a href="form.html"> |    Contact   | </a>
+        </nav>
+      </header> 
         <main>
-            <h2>Pan-Fried Leek Buns (Shui Jian Bao)</h2>
-            <p>A "bun" in this context is just a slightly different kind of dumpling, made with a heartier and more forgiving flour dough. They're often cooked like pan-fried dumplings, getting nice and crispy on the bottom. To fill them, try garlicky Chinese chives mixed with umami-rich dried baby shrimp. If you can't find Chinese chives, the milder flavor of leeks will work, too.</p>
-            <a href="https://www.seriouseats.com/dumplings-roundup">Get the recipe for Pan-Fried Leek Buns (Shui Jian Bao) »</a>
-        </main>
-        <footer class="footer">
-            <ul class="footer_list footer-list">
-                <li class="footer-list_item list-item">
-                    <a class="list-item_link" href="">About</a>
-                </li>
-                <li class="footer-list_item list-item">
-                    <a class="list-item_link" href="">Link</a>
-                </li>
-                <li class="footer-list_item list-item">
-                    <a class="list-item_link" href="">Link</a>
-                </li>
-            </ul>
-            <p>&copy; 2025 All rights reserved</p></footer>
+            <div class="video">
+              <h2>Video:</h2>
+              <video width="400" controls>
+                <source src="video.mp4" type="video/mp4">
+                <source src="video.mp4" type="video/ogg">
+              </video>
+            </div>
+            <h2>Best place to try dumplings in Sligo:</h2>
+            <aside>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2329.900830661351!2d-8.475337523352248!3d54.27033187257169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ee834fdd8a88f%3A0x1713f951fa019e26!2sBia%20Bao!5e0!3m2!1sen!2sie!4v1743412759487!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+            </aside>
+        
+            </main>
+        <footer>
+          <a class="list-item_link" href="index.html">Home</a>
+          <a class="list-item_link" href="gallery.html">Gallery</a>
+          <a class="list-item_link" href="form.html">Contact</a>
+          <p>&copy; 2025 All rights reserved</p>
         </footer>
     </body>
 </html>
